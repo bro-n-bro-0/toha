@@ -100,6 +100,18 @@
                 <li><a href={{ printf "https://github.com/%s" $value }} target="_blank" rel="noopener">
                   <span><i class="fab fa-github"></i></span> <span>{{ $value }}</span>
                 </a></li>
+              {{ else if (eq $key "twitter") }}
+                <li><a href={{ printf "https://twitter.com/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-twitter"></i></span> <span>{{ $value }}</span>
+                </a></li>
+              {{ else if (eq $key "telegram") }}
+                <li><a href={{ printf "https://t.me/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>{{ $value }}</span>
+                </a></li>
+              {{ else if (eq $key "cyber") }}
+                <li><a href={{ printf "https://cyb.ai/network/bostrom/contract/%s" $value }} target="_blank" rel="noopener">
+                  <span><i class="fas fa-circle"></i></span> <span>{{ $value }}</span>
+                </a></li>
               {{ else }}
                 <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
               {{ end }}

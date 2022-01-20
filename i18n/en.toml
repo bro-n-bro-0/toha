@@ -24,7 +24,7 @@ other = "My resume"
 other = "Navigation"
 
 [contact_me]
-other = "Contact me:"
+other = "Get more info here:"
 
 [email]
 other = "Email"
@@ -100,6 +100,9 @@ other = "comments powered by"
 
 [read]
 other = "Read"
+
+[delegate]
+other = "Delegate to your bro"
 
 [project_star]
 other = "Star"
